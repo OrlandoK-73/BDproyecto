@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | ReservaGo</title>
+    <link rel="icon" href="images/logo3.png" type="image/gif" />
+    <link rel="stylesheet" href="css/login-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>ACA TENDRIA QUE IR EL LOGIN, solo pegen su codigo</h1>
+    <div class="wrapper">
+        <img src="images/logo3.png" alt="" />
+        <form action="">
+            <h1>Inciar Sesión</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre de usuario"
+                required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password"
+                placeholder="Contraseña" required>
+                <i class='bx bx-lock' ></i>
+            </div>
+
+            <div class="Remember-forgot">
+                <label><input type="checkbox"> Recordar mis datos</label>
+                <a href="contact.html" class="btnforgotpass">Olvidé mi contraseña</a>
+            </div>
+
+                <button type="submit" class="btn">
+                    <a href="index.html" class="btningresar">Ingresar</a>
+                </button>
+
+            <div class="register-link">
+                <p>¿Todavía no tienes una cuenta? -
+                    <a href="registro.html" class="btnregister">Registrar</a>
+                </p>
+            </div>
+        </form>
+    </div>    
+    <div class="btnregresar">
+        <button type="submit" class="back">
+            <a href="index.html" class="btnback">Regresar</a>
+        </button>
+    </div>
 </body>
 </html>
