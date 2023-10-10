@@ -1,0 +1,22 @@
+version: '3'
+services:
+  webapp:
+    image: httpd:latest
+    ports:
+      - "8181:80"
+    volumes:
+      - ./public_html:/usr/local/apache2/htdocs/
+    depends_on:
+      - dbReserva
+
+  dbReserva:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: bdreservago
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 123
+    ports: 
+      - 5432:5432 
+
+volumes:
+  db_data:
